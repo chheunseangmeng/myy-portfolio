@@ -22,10 +22,17 @@ nav {
   color: black;
   position: relative;
 }
-
-.logo-name {
-  font-size: 24px;
-  font-weight: bold;
+.logo-name{
+  font-size: 25px;
+  color:#000;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.logo-name:hover{
+  color: greenyellow;
+  text-shadow: 0 0 5px #000;
+  transform: scale(1.1);
+  font-size: 25px;
 }
 
 /* Menu Links - Visible on larger screens */
@@ -180,9 +187,32 @@ nav {
 }
 
 .main-profile img {
-  width: 350px;
+  width: 370px;
   border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+  padding: 15px;
 }
+.main-profile:hover {
+  background: linear-gradient( -45deg, rgb(255, 237, 137), rgba(246, 147, 249, 0.674) , rgb(149, 199, 252)  );
+  animation: color 2s ease-in-out infinite;
+  background-size: 300% 300%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gray;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
 .text-main span {
   position: relative;
   font-size: 4.5rem;
@@ -718,5 +748,10 @@ nav {
 } 
 .education p{
   font-size: 16px;
+}
+.main-profile:hover {
+  background: none;
+  animation: none;
+  box-shadow: none;
 }
 }
