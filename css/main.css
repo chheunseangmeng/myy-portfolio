@@ -12,7 +12,6 @@ html {
 
 body {
   background: #fff;
-  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -581,7 +580,9 @@ nav {
   }
 }
 /* ✅ Screen size 768px and below - Show mobile menu */
-@media (max-width: 768px) {
+
+
+@media screen and (max-width: 736px) {
   .menu-icon {
     display: block; /* Show menu icon */
   }
@@ -693,19 +694,9 @@ nav {
     margin-top: 5vh;
 }
 }
-@media (max-width: 428px) {
-
-  body{
-    overflow-x: hidden;
-  }
-}
 
 /* ✅ Mobile View (max-width: 480px) */
 @media (max-width: 480px) {
-
-  body{
-    overflow-x: hidden;
-  }
   .nav-link {
     transform: translateX(100%); 
     position: fixed;     
