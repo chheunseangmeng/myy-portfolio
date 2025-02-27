@@ -56,3 +56,7 @@ ScrollReveal().reveal('.scroll-reveal', {
   easing: 'ease-in-out',
   reset: false,     
 });
+
+
+
+// my education

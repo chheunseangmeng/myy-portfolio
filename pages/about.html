@@ -11,6 +11,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="icon" href="../img/about-icon.png">
+    <style>
+      @media (max-width: 480px) {
+    .event { width: 45%; }
+    .left { right: -2%; }
+    .right { left: 53%; }
+    h2 { font-size: 16px; } 
+    p { font-size: 12px; } 
+}
+    </style>
   </head>
   <body>
     <nav>
@@ -73,6 +82,10 @@
     </div>
     <!-- start experience -->
 
+    <!-- time line about my education -->
+    <h1 style="text-align: center;margin-bottom: 70px;">My Education Timeline</h1>
+    <div class="timeline" id="timeline"></div>
+
 
     <!-- Contact Header -->
     <div class="contact-meee scroll-reveal">
@@ -114,6 +127,37 @@
         <li><a href="../pages/experience.html">Experience</a></li>
       </ul>
     </div>
+
+
+    <!-- script of my education -->
+     <script>
+      
+const experiences = [
+  { year: '2023', title: 'High School Graduation', details: 'Graduated from high school in 2023...', side: 'left' },
+  { year: '2023', title: 'Transparency International Cambodia', details: 'Joined the event of Transparency International Cambodia from 02 Feb 2023 - 07 Feb 2023...', side: 'right' },
+  { year: '2023', title: 'Exchange Program', details: 'Exchange program between youth in Cambodia and Singapore on 09 Feb 2023...', side: 'left' },
+  { year: '2023', title: 'AYLE', details: 'Joined the Annual Youth Leadership Event (AYLE) in December 2023...', side: 'right' },
+  { year: '2024', title: 'Start PNC', details: 'Started university at PNC on 05 Feb 2024...', side: 'left' }
+];
+
+const ribbonColors = ['#fe6241', '#4cf208', '#2196f3', '#d23df3', '#ff9800'];
+
+const timeline = document.getElementById('timeline');
+
+experiences.forEach((exp, index) => {
+  const eventDiv = document.createElement('div');
+  eventDiv.classList.add('event', exp.side, 'scroll-reveal'); // Added 'scroll-reveal' class
+  const ribbonColor = ribbonColors[index % ribbonColors.length];
+
+  eventDiv.innerHTML = `
+      <div class='ribbon' style="background-color: ${ribbonColor};">${exp.year}</div>
+      <h2>${exp.title}</h2>
+      <p>${exp.details}</p>
+  `;
+  timeline.appendChild(eventDiv);
+});
+     </script>
+     <!-- end of scrpit education -->
 
     <!-- Add Scripts Here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
