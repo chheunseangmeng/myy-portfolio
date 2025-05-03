@@ -193,12 +193,18 @@ nav {
   padding: 15px;
 }
 .main-profile:hover {
-  background: linear-gradient( -45deg, rgb(255, 237, 137), rgba(246, 147, 249, 0.674) , rgb(149, 199, 252)  );
+  background: linear-gradient(
+    -45deg,
+    rgb(167, 255, 131),   /* light green */
+    rgba(142, 255, 187, 0.7), /* mint green with transparency */
+    rgb(102, 255, 102)    /* fresh green */
+  );
   animation: color 2s ease-in-out infinite;
   background-size: 300% 300%;
   border-radius: 50%;
   box-shadow: 0 0 5px gray;
 }
+
 @keyframes color{
   0%{
     background-position: 0 50%;
@@ -765,10 +771,7 @@ nav {
   animation: none;
   box-shadow: none;
 }
-
 }
-
-
 .timeline {
   position: relative;
   max-width: 800px;
