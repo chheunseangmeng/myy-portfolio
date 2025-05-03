@@ -216,8 +216,6 @@ nav {
     background-position: 0 50%;
   }
 }
-
-
 .text-main span {
   position: relative;
   font-size: 4.5rem;
@@ -543,6 +541,80 @@ nav {
   color: rgb(1, 173, 1);
   border-bottom: 3px solid #333;
 }
+main {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-vc {
+  width: 30%;
+  padding: 1rem;
+}
+
+.title-vc h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.title-vc p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.vc-img {
+  width: 70%;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vc-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.vc-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .title-vc h2 {
+    font-size: 1.25rem;
+  }
+
+  .title-vc p {
+    font-size: 0.9rem;
+  }
+
+  .vc-img {
+    border-radius: 10px;
+  }
+
+  .vc-img img {
+    border-radius: 8px;
+  }
+}
+
 /* ✅ Screen size 1024px - Keep menu normal */
 @media (max-width: 1024px) {
   .nav-link ul li a {
@@ -583,6 +655,24 @@ nav {
   .education,
   .exper {
     min-width: 100%;
+  }
+  main {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .title-vc,
+  .vc-img {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .title-vc h2 {
+    font-size: 1.5rem;
+  }
+
+  .title-vc p {
+    font-size: 0.95rem;
   }
 }
 /* ✅ Screen size 768px and below - Show mobile menu */
@@ -770,6 +860,18 @@ nav {
   background: none;
   animation: none;
   box-shadow: none;
+}
+main {
+  padding: 0.75rem;
+  gap: 1rem;
+}
+
+.title-vc h2 {
+  font-size: 1.1rem;
+}
+
+.title-vc p {
+  font-size: 0.85rem;
 }
 }
 .timeline {
