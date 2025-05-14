@@ -6,6 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/experince.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -123,6 +124,98 @@
         <img src="../img/vc-png.PNG" alt="">
       </div>
     </main>
+
+    
+    <div class="contact-meee scroll-reveal">
+      <p>Dive in with me</p>
+      <h1 class="experience scroll-reveal">Another Projects</h1>
+    </div>
+
+    <!-- card container of project -->
+    <div class="container-cards">
+        <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">PNC Sport Club </p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">Voice Control Music Player</p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">Expense Tracker app  </p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">Drinks sale</p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">P'sa Kasikor</p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+           <div class="card-project">
+            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
+            <div class="card-overlay">
+                <p class="description">P'sa Kasikor</p>
+                <div class="btn-container">
+                    <a href="#" class="btn view-web">View Web</a>
+                    <a href="#" class="btn github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll(".card-project").forEach(card => {
+            VanillaTilt.init(card, {
+                max: 15,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.3,
+            });
+        });
+    </script>
     
     <!-- Contact Header -->
     <div class="contact-meee scroll-reveal">
@@ -160,8 +253,6 @@
       </div>
     </section>
 
-
-
      <!-- Footer -->
      <div class="footer scroll-reveal">
       <ul>
@@ -171,8 +262,6 @@
         <li><a href="./experience.html">Experience</a></li>
       </ul>
     </div>
-
-
 
     <!-- Add Scripts Here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
